@@ -1,15 +1,21 @@
-# Google Spreadsheet Formulas List using Goolge App Scripts
+# 🚀 Google Spreadsheet Formulas in 2025 using Google Apps Script
 
-I'm Going to share some useful formulas that are used in daily life & can make your wirkflow more easy.
+I'm sharing some powerful and practical formulas you can use in your daily workflows to boost productivity and save time in 2025.
 
-## This is done using the [setFormula](https://developers.google.com/apps-script/reference/spreadsheet/range#setFormula(String)) for a selected cell. Below is an example of how to do this.
-```ruby
-var ss = SpreadsheetApp.getActiveSpreadsheet();
-var sheet = ss.getSheets()[0];
+> 💡 These formulas are applied using the [`setFormula`](https://developers.google.com/apps-script/reference/spreadsheet/range#setFormula(String)) method on a selected cell using Google Apps Script.
 
-var cell = sheet.getRange("B5");
+---
+
+## 📌 Basic Example using `setFormula`
+
+```javascript
+const ss = SpreadsheetApp.getActiveSpreadsheet();
+const sheet = ss.getSheets()[0];
+
+const cell = sheet.getRange("B5");
 cell.setFormula("=SUM(B3:B4)");
 ```
+
 
 How to Insert it You can see the Image below
 ![Spreadsheet Formulas](https://i.imgur.com/VuMmDAb.jpg "Formulas by Sarmad Gardezi")
